@@ -1,0 +1,29 @@
+{% extends "UserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+    <p>{{ 'registration.confirmed'|trans({'%username%': user.username}) }}</p>
+    {% if targetUrl %}
+        <p><a href="{{ targetUrl }}">{{ 'registration.back'|trans }}</a></p>
+    {% endif %}
+
+    Vous aller étre rediriger pour compléter votre profil
+
+    <script type="text/javascript">
+        function Redirect()
+        {
+            window.location="../app/person/add";
+        }
+
+        setTimeout('Redirect()', 5000);
+    </script>
+{% endblock fos_user_content %}
+
+
+
+
+
+
+

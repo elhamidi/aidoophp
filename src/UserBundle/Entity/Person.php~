@@ -1,0 +1,202 @@
+<?php
+
+namespace UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Person
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Person
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(name="zipcode" , type="string" , length=5)
+     */
+    private $zipCode;
+
+    /**
+     * @ORM\Column(name="birthYear" , type="integer" )
+     */
+    private $birthYear;
+
+    /**
+     * @ORM\Column(name="accountNumber" , type="string" , length=20)
+     */
+    private $accountNumber;
+
+    /**
+     * @ORM\OneToOne(targetEntity="UserBundle\Entity\User", cascade={"persist"})
+     */
+    private $user;
+
+    /**
+     * @ORM\Column(name="language" , type="string" , length=2)
+     */
+    private $language;
+
+    /**
+     * @ORM\Column (name="image" , type="blob")
+     */
+    private $image;
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set zipCode
+     *
+     * @param \string $zipCode
+     * @return Person
+     */
+    public function setZipCode(\String $zipCode)
+    {
+        $this->zipCode = $zipCode;
+
+        return $this;
+    }
+
+    /**
+     * Get zipCode
+     *
+     * @return \string
+     */
+    public function getZipCode()
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * Set birthYear
+     *
+     * @param \string $birthYear
+     * @return Person
+     */
+    public function setBirthYear(\String $birthYear)
+    {
+        $this->birthYear = $birthYear;
+
+        return $this;
+    }
+
+    /**
+     * Get birthYear
+     *
+     * @return \string
+     */
+    public function getBirthYear()
+    {
+        return $this->birthYear;
+    }
+
+    /**
+     * Set accountNumber
+     *
+     * @param \string $accountNumber
+     * @return Person
+     */
+    public function setAccountNumber(\String $accountNumber)
+    {
+        $this->accountNumber = $accountNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get accountNumber
+     *
+     * @return \string
+     */
+    public function getAccountNumber()
+    {
+        return $this->accountNumber;
+    }
+
+    /**
+     * Set language
+     *
+     * @param \string $language
+     * @return Person
+     */
+    public function setLanguage(string $language)
+    {
+        $this->language = $language;
+
+        return $this;
+    }
+
+    /**
+     * Get language
+     *
+     * @return \String
+     */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \UserBundle\Entity\User $user
+     * @return Person
+     */
+    public function setUser(\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * Set image
+     *
+     * @param string $image
+     * @return Person
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+}

@@ -1,0 +1,17 @@
+
+{{ dump() }}
+<ul>
+
+    <li>{{ annonce.titre }}</li>
+    <li>{{ annonce.contenu }}</li>
+    <li>{{ annonce.datecreation|date("d/m/Y")}}</li>
+    <li>{{ annonce.montant }}</li>
+
+
+   <div><a href="../../../app/annonce/edit/{{ annonce.id }}">Editer </a></div>
+    <div><a href="../../../app/annonce/delete/{{ annonce.id }}">supprimer </a></div>
+    <div><a href="../../../app/annonce/publish/{{ annonce.id }}">publier </a></div>
+
+
+</ul>
+

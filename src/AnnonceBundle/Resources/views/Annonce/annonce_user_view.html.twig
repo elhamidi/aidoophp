@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{{ dump() }}
+{% trans_default_domain 'AnnonceBundle' %}
+
+
+Annonce publi&eacute;e par {{ annonce.user.pseudo }}
+
+<ul>
+
+    <li>{{ annonce.titre }}</li>
+    <li>{{ annonce.contenu }}</li>
+    <li>{{ annonce.datecreation|date("d/m/Y")}}</li>
+    <li>{{ annonce.montant }}</li>
+
+    <form action = "{{ url('message_thread_new')}}" method="post">
+        <input type="hidden" name="id" value="{{ annonce.user.id }}">
+        <input type="submit" value="{{ 'answer' | trans }}">
+    </form>
+</ul>

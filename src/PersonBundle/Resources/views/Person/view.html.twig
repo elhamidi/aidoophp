@@ -1,0 +1,22 @@
+
+{{ dump() }}
+
+{% block body %}
+    <h1>Information Personnelles</h1>
+
+    <ul>
+        <li> Zip code : {{ person.zipCode }}</li>
+        Mobile :
+        <li>  {{ person.mobile }}</li>
+        <li>{{ person.birthYear }}</li>
+        <li>
+            {% if person.imageEnabled == 1 %}
+            <img src="{{ asset('uploads/photos/' ~ person.image) }}"/></li>
+        {%
+         else
+         %}
+             <img src="{{ asset('uploads/photos/nopic.jpg') }}"/></li>
+             {% endif %}
+
+    </ul>
+{% endblock %}

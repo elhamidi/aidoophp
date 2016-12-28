@@ -1,0 +1,15 @@
+{% extends 'MessageBundle::layout.html.twig' %}
+
+{% block fos_message_content %}
+
+<h2>{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}</h2>
+
+{#<a href="{{ url('message_thread_new')}}">{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</a>#}
+        {#<form action = "{{ url('message_thread_new')}}" method="post">#}
+            {#<input type="hidden" name="id" value=" 10 ">#}
+            {#<input type="submit" value="{{ answer|trans }}">#}
+        {#</form>#}
+
+{% include 'MessageBundle:Message:threads_list.html.twig' with {'threads': threads} %}
+
+{% endblock %}
