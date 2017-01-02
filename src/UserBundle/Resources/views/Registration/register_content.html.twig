@@ -1,8 +1,116 @@
+
+{{ dump() }}
 {% trans_default_domain 'FOSUserBundle' %}
 
-<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+
+<div class="full-top full-top__index">
+
+    <div class="container">
+        <img src="{{ asset ('img/aidooLogo.png') }}">
+
+        <div class="title">Enregistrer-vous </div>
+        <div style="font-size: 14px;font-family: Roboto, sans-serif; margin-bottom: 10px;">Veuillez completer le formulaire (tous les champs sont requis)
+        </div>
+
+
     </div>
-</form>
+
+    <div class="formContainer">
+
+        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST"
+              class="fos_user_registration_register">
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
+
+            <div class="inputContainer">
+                <label class="inputLabel">
+                    <input type="text" id="fos_user_registration_form_username"
+                           name="fos_user_registration_form[username]" placeholder="UserName" required="required"/>
+                </label>
+            </div>
+
+
+
+            <div style="color:red;"> {{ form_errors(form.username) }}</div>
+
+            <div class="inputContainer">
+                <label class="inputLabel">
+                    <input type="text" id="fos_user_registration_form_email" name="fos_user_registration_form[email]"
+                           placeholder="email" required="required"/>
+                </label>
+            </div>
+
+            {{ form_errors(form.email) }}
+            <div class="inputContainer">
+                <label class="inputLabel">
+                    <input type="password" id="fos_user_registration_form_plainPassword_first"
+                           name="fos_user_registration_form[plainPassword][first]" placeholder="password"
+                           required="required">
+                </label>
+            </div>
+
+            <div style="color:red;">  {{ form_errors(form.plainPassword.first) }}</div>
+
+            <div class="inputContainer">
+                <label class="inputLabel">
+                    <input type="password" id="fos_user_registration_form_plainPassword_second"
+                           name="fos_user_registration_form[plainPassword][second]" placeholder="confirmation"
+                           required="required">
+                </label>
+            </div>
+
+
+
+            <div class="inputContainer">
+                <label class="inputLabel">
+                    <input type="text" id="fos_user_registration_form_pseudo" name="fos_user_registration_form[pseudo]"
+                           required="required" maxlength="30" pattern=".{3,}" placeholder="Pseudo" class="form-control">
+                </label>
+            </div>
+
+            <div class="inputContainer">
+
+
+                <div id="fos_user_registration_form_gender">
+                    <div class="radio"><label class="required" style="border-bottom: 1px solid #cdd5d6;  width: 50%;float :left; padding-top: 10px;
+    max-width: 100%;
+    margin-bottom: 5px;  padding-bottom: 10px;"><input type="radio"
+                                                       id="fos_user_registration_form_gender_0"
+                                                       name="fos_user_registration_form[gender]"
+                                                       required="required" value="0"> {{ 'form.Male'|trans }}</label>
+                    </div>
+                    <div class="radio"><label class="required" style="border-bottom: 1px solid #cdd5d6;  width: 50%;display: inline-block;float :left
+    max-width: 100%;
+    margin-bottom: 5px;  padding-bottom: 10px; padding-top: 10px"><input type="radio"
+                                                       id="fos_user_registration_form_gender_1"
+                                                       name="fos_user_registration_form[gender]"
+                                                       required="required" value="1"> {{ 'form.Female'|trans }}</label>
+                    </div>
+                    <div class="col-xs-12 col-md-6"><input id="user_gender_0" name="user[gender]" required="required" type="radio" value="0" aria-required="true"><label class="gender-field male-field" for="user_gender_0">Je suis un homme</label></div>
+                </div>
+
+
+            </div>
+
+
+            <div id="acceptTermsPrivacyAge" style="padding-top: 10px;padding-bottom: 20px;">
+                <label class="inputLabel">
+                    <input type="checkbox" name="accept"><span
+                            class="labelText">{{ 'Yes_I_ve_read_and_accept_the'|trans }} <a
+                                href="privacy.html"> {{ 'privacy_policy' |trans }}</a> {{ 'And_the' |trans }} <a
+                                href="terms.html">{{ 'term_and_conditions'|trans }}</a>. {{ 'I_garantee_Major'|trans }}</span>
+
+                </label>
+            </div>
+
+
+
+            <p> {{ 'already_registred'|trans }} ? <a id="switchToLogin" href="../login">{{ 'layout.login'|trans }}</a>
+            </p>
+
+
+            {{ form_row(form._token) }}
+        </form>
+
+    </div>
+</div>

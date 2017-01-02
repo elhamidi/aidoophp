@@ -3,6 +3,7 @@
 
 {% block fos_message_content %}
 
+
     <h2>{{ thread.subject }}</h2>
     <div id="refresh">
 
@@ -29,22 +30,37 @@
     </form>
     <script>
 
+        function init(){
+            refreshTread();
+        }
+
         function refreshTread() {
+            setTimeout('refreshTread();',5000);
+            var id = {{ thread.id }}
+
 
             $.ajax({
-                url: "{{ path('_ajaxUpdateInfo') }}",
+                url: "{{ path('message_thread_refresh') }}",
+                data : {"threadId" : id},
 
-                data: { "optionSelected" : optionSelected },
+
                 success: function(data) {
-                    alert (data);
+                    $('#refresh').html(data);
                 },
 
               
             });
 
-        }
 
-        setInterval(refreshTread(), 3000) // Répète la fonction toutes les 10 sec
+
+
+        }
+        init();
+
+       // refreshTread();
+       // setTimeout("refreshTread()", 3000);
+
+        setInterval(refreshTread(), 2000) // Répète la fonction toutes les 10 sec
 
     </script>
 

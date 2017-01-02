@@ -220,11 +220,12 @@ class MessageController extends Controller implements ContainerAwareInterface
     /**
      * @param $threadId
      * @return Response
-     * @ROUTE ("/message/thread/refresh" , name = "message_thread_refresh")
+     * @ROUTE ("/message/thread/refresh/" , name = "message_thread_refresh")
      */
 
-    public function refreshThreadMessagesAction($threadId)
+    public function refreshThreadMessagesAction()
     {
+        $threadId =  $_GET['threadId'];
 
         $thread = $this->getProvider()->getThread($threadId);
 

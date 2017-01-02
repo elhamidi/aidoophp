@@ -15,10 +15,15 @@ class RegistrationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('pseudo');
-        $builder->add('gender', 'choice', array(
-            'choices'   => array('0' => 'Male', '1' => 'Female'),
-            'required'  => false,
+        $builder->add('pseudo',null, array('label'=>'form.Pseudo' , 'translation_domain' => 'FOSUserBundle'));
+        $builder->add('gender',
+            'choice', array(
+                'label' =>'form.Gender',
+            'choices'   => array('0' => 'form.Male', '1' => 'form.Female' ),
+                'expanded' => true,
+            'required'  => true,
+            'translation_domain' => 'FOSUserBundle',
+
         ));
 
     }

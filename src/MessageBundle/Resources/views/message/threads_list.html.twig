@@ -16,7 +16,7 @@
     {% if threads %}
         {% for thread in threads %}
             <tr>
-                <td>
+                <td style="background-color: red" >
 
 
                     <a href="{{ url('message_thread_view', {'threadId': thread.id}) }}">

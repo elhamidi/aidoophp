@@ -8,7 +8,6 @@
 
 namespace UserBundle\Controller;
 
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -24,12 +23,8 @@ class ProfilController extends Controller
      * requirements={"id":"\d+"})
      */
     public function showProfil ($id){
-
-
         return $this->render('FOSUserBundle:Profil:show.html.twig');
     }
-
-
     /**
      * @ROUTE ("/UserProfil/addProfile")
      */
@@ -39,46 +34,23 @@ class ProfilController extends Controller
         $form   = $this->createForm(new PersonType(), $person);
         $form->handleRequest($request);
 
-
         if ($request->isMethod('POST') ){
-
             // on ajoute person a la base
-
             return $this->render('FOSUserBundle:Profil:show.html.twig');
-
         }
-
         // sinon je retourne le formulaire
-
-
-
         return $this->render('FOSUserBundle:Profil:add.html.twig', array ('form' => $form->createView()));
-
-
     }
-
-
     /**
      * @ROUTE ("/UserProfil/editProfile/{id}")
      */
     public function editProfil ($id){
-
-
         return $this->render('UserBundle:Profil:add.html.twig');
-
     }
-
     /**
      * @ROUTE ("/UserProfil/deleteProfile/{id}")
      */
     public function deleteProfil ($id){
-
-
         return $this->render('UserBundle:Profil:add.html.twig');
-
     }
-
-
-
-
 }

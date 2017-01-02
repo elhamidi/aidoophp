@@ -1,0 +1,1078 @@
+#login-form-container .forgotPassword {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+#login-form-container .forgotPassword a {
+    color: #ef7b7f;
+    font-size: 10px;
+    font-weight: normal;
+    text-decoration: none
+}
+
+#registration-form-container #genderInput {
+    margin-top: 6px;
+}
+
+#registration-form-container #genderInput .inputLabel {
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #cdd5d6;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+#registration-form-container #genderInput .inputLabel input {
+    width: initial;
+    height: initial;
+    margin-right: 10px
+}
+
+#registration-form-container #genderInput .inputLabel .labelText {
+    font-weight: normal
+}
+
+#registration-form-container #acceptTermsPrivacyAge input[type=checkbox] {
+    width: initial;
+    height: initial;
+    margin-right: 10px
+}
+
+#registration-form-container #acceptTermsPrivacyAge .labelText {
+    color: #919b9d;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: normal;
+}
+
+#registration-form-container #acceptTermsPrivacyAge .labelText a {
+    color: #919b9d;
+    text-decoration: underline
+}
+
+.formContainer {
+    margin-left:  auto;
+    margin:  auto;
+    max-width: 375px;
+    background-color: #fff;
+    padding:  20px 15px 20px 15px;
+    border: 1px solid #62adad;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+}
+
+.formContainer form {
+    margin-bottom: 10px;
+}
+
+.formContainer form .connectionErrorMsg {
+    display: none;
+    color: #ef5a5a;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold
+}
+
+.formContainer form .inputContainer .inputLabel {
+    width: 100%;
+}
+
+.formContainer form .inputContainer .inputLabel input {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #353737;
+    border: none;
+    border-bottom: 1px solid #cdd5d6
+}
+
+.formContainer form .inputContainer .inputLabel.invalid input {
+    border-bottom-color: #ef7b7f
+}
+
+.formContainer form .inputContainer .inputLabel .errorMsg {
+    display: none;
+    color: #ef7b7f;
+    font-size: 12px;
+    font-weight: normal
+}
+
+.formContainer form .inputContainer .inputLabel.invalid .errorMsg {
+    display: block
+}
+
+.formContainer form button.btn.cta {
+    margin-top: 6px;
+    width: 100%;
+    height: 46px;
+    background-color: #76b7b7;
+    background-image: none;
+    text-transform: none;
+    border-radius: 2px;
+}
+
+.formContainer form button.btn.cta:hover, .formContainer form button.btn.cta:focus {
+    color: #fff;
+    background-color: #62adad;
+}
+
+.formContainer p.switchForm {
+    text-align: center;
+    font-size: 14px;
+    color: #353737;
+}
+
+.formContainer p.switchForm a {
+    cursor: pointer;
+    color: #353737;
+    text-decoration: underline;
+    font-weight: bold
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    margin: 20px;
+    position: relative
+}
+
+body > * {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: #444746
+}
+
+.navbar-inverse {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600
+}
+
+.registerHeading {
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.languageToggle {
+    float: left;
+    border: none;
+    padding-left: 15px;
+}
+
+.languageToggle button {
+    border: none;
+    width: 72px
+}
+
+.languageToggle #langNavbar li a {
+    text-align: left;
+    padding-left: 15px
+}
+
+.languageToggle #langNavbar {
+    padding-left: 10px
+}
+
+.languageToggle ul {
+    margin-top: 0
+}
+
+a {
+    text-decoration: none
+    color : black ;
+}
+
+a:hover {
+    text-decoration: none ;
+}
+
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    border: none
+}
+
+.navbar-inverse .navbar-toggle.collapsed, .navbar-inverse .navbar-toggle {
+    background-color: transparent;
+    border: none
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #444746
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #444746
+}
+
+.container.final {
+    margin-bottom: 200px
+}
+
+.full-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.full-top .line-1 {
+    width: 320px;
+    color: #E0E0E0;
+}
+
+.full-top .container {
+    text-align: center
+}
+
+.full-top__imprint .container {
+    height: 250px
+}
+
+.full-top__imprint .full-top__gradient {
+    height: 50%
+}
+
+.full-top__team .container, .full-top__jobs .container {
+    height: 500px
+}
+
+.full-top__pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% calc(100% + 10px);
+    z-index: -1;
+    top: 0;
+}
+
+.full-top__pattern-index, .full-top__pattern-team, .full-top__pattern-jobs {
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top
+}
+
+.full-top__pattern-index {
+    background-image: url("../images/header_pic@2x.jpg")
+}
+
+.full-top__pattern-team {
+    background-image: url("../images/img_team@2x.jpg")
+}
+
+.full-top__pattern-jobs {
+    background-image: url("../images/img_job@2x.jpg")
+}
+
+.full-top__pattern-imprint {
+    background: #e5576a
+}
+
+.full-top__gradient {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+}
+
+.full-top__gradient-top {
+    background: linear-gradient(#f3f7f5, rgba(243, 247, 245, 0))
+}
+
+.full-top__gradient-bottom {
+    bottom: 0;
+    background: linear-gradient(rgba(243, 247, 245, 0), #f3f7f5)
+}
+
+.full-top .title {
+    font-size: 25px;
+
+    color: #0000;
+    font-weight: 200;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.full-top .subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #e5576a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.full-top .subtitle .subsubtitle {
+    color: #444746;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+    display: none
+}
+
+.promo-images {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.promo-images img {
+    width: 100px;
+    opacity: .6;
+    margin: 20px
+}
+
+.text-center.topSpacing, .row.icon .featureBox {
+    margin-bottom: 40px;
+}
+
+.text-center.topSpacing .line-1, .row.icon .featureBox .line-1 {
+    max-width: 180px
+}
+
+.link {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: #e4032f;
+    font-weight: 300
+}
+
+.full-error {
+    background-image: url("../images/header_pattern@2x.png");
+    width: auto;
+    height: 400px;
+    background-size: 100% 100%;
+    margin: auto;
+    background-color: #e4032f
+}
+
+.error-badge {
+    margin-top: 40px
+}
+
+.job-p {
+    font-size: 16px;
+    color: #444746;
+    font-weight: 300;
+    font-family: 'Open Sans'
+}
+
+.jobs .job-p {
+    margin: auto;
+    margin-top: 40px;
+    width: 90%
+}
+
+.error-code {
+    margin-top: 40px;
+    font-size: 120px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-align: center
+}
+
+.error-text {
+    font-size: 18px;
+    font-family: 'Open Sans';
+    text-align: center
+}
+
+.goback {
+    margin-top: 40px
+}
+
+.demand {
+    font-size: 60px;
+    color: 245, 245, 245;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin-top: 60px
+}
+
+.signup {
+    font-size: 18px;
+    color: #e5576a;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin-bottom: 40px
+}
+
+.line {
+    border-bottom: solid 1px #fff;
+    width: auto;
+    text-align: center
+}
+
+.line-jobpage {
+    border-bottom: solid .5px #444746;
+    width: auto;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 60px
+}
+
+.instant {
+    margin-top: 60px
+}
+
+.instant2 {
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 23px
+}
+
+.instant-p {
+    font-family: 'Open Sans';
+    font-weight: 300
+}
+
+.instant-job {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: #e5576a;
+    font-size: 28px
+}
+
+.instant-p1 {
+    font-size: 16px
+}
+
+.job-p {
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 30px
+}
+
+.line-2 {
+    margin: auto;
+    width: 244px;
+    text-align: center;
+    border-bottom: solid .5px #e5576a;
+    border-top: solid 1px #e5576a
+}
+
+.job-line {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px #e5576a;
+    font-weight: 300
+}
+
+.job-engineer {
+    font-size: 23px;
+    color: #e5576a;
+    font-weight: 300;
+    margin-top: 80px
+}
+
+.job-h1 {
+    font-size: 23px;
+    color: #e5576a;
+    font-weight: 300;
+    margin-top: 100px
+}
+
+.wonderful {
+    font-weight: 600;
+    margin: auto
+}
+
+.found-job {
+    font-family: 'Open Sans';
+    margin-top: 150px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #444746;
+    text-align: center;
+    margin-bottom: 250px
+}
+
+.right-job {
+    font-weight: 600
+}
+
+.send {
+    font-size: 20px
+}
+
+.joblink {
+    margin-top: 40px;
+    margin-bottom: 250px;
+    font-size: 20px
+}
+
+.icon {
+    margin-top: 30px
+}
+
+.logo-h1 {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: #444746;
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.socialicons {
+    text-align: center;
+}
+
+.socialicons img {
+    display: inline-block;
+    width: 32px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.footerlinks {
+    text-align: center;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100px;
+    margin-left: 25px;
+    margin-right: 25px
+}
+
+@media (max-width: 520px) {
+    .footerlinks a {
+        display: inherit;
+        margin-top: 20px
+    }
+}
+
+.col-sm-3.col-xs-6 {
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.explainOhlala {
+    font-size: 20px;
+}
+
+.explainOhlala.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@media (min-width: 520px) {
+    .footerlinks {
+        margin-top: 20px
+    }
+
+    .signup-button button {
+        width: 350px
+    }
+}
+
+.top-padding {
+    padding-top: 140px
+}
+
+.photo-credit {
+    margin-bottom: 250px
+}
+
+.rowIcons .col-md-2 {
+    margin-top: 20px
+}
+
+.rowIcons .col-md-3 {
+    margin-top: 20px
+}
+
+.copyright {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 100px
+}
+
+.spacer {
+    height: 300px
+}
+
+.register-button {
+    text-align: center
+}
+
+.apply-button {
+    margin-top: 60px;
+    margin-bottom: 250px;
+    text-align: center
+}
+
+.privacy-h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Open Sans';
+    font-size: 18px
+}
+
+.privacy-text {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.privacy-text-last {
+    margin-bottom: 250px
+}
+
+.privacy-text-sub {
+    opacity: .7
+}
+
+.pia-line {
+    border-bottom: 1px solid #444746;
+    text-align: center
+}
+
+.torsten-line {
+    border-bottom: 1px solid #444746;
+    text-align: center
+}
+
+.team-h1 {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: #444746;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.team-text {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: #444746;
+    font-weight: 300
+}
+
+.Laura {
+    margin-top: 40px
+}
+
+.pia-image {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center
+}
+
+.torsten-image {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center
+}
+
+.sectionHeading {
+    text-align: center;
+    font-size: 23px;
+    color: #444746;
+}
+
+.sectionHeading .line-1 {
+    border-bottom-color: #444746;
+    max-width: 144px
+}
+
+.sectionHeading.red {
+    color: #e5576a;
+}
+
+.sectionHeading.red .line-1 {
+    border-bottom-color: #e5576a
+}
+
+.sectionHeading strong {
+    font-weight: 600
+}
+
+.sectionHeading .subHeading {
+    font-size: 16px
+}
+
+.featureBox {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.featureBox:not(.long) {
+    color: #e5576a;
+}
+
+.featureBox:not(.long) .line-1 {
+    border-bottom-color: #e5576a
+}
+
+.featureBox.long .line-1 {
+    width: 40px
+}
+
+.featureBox .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 6px
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    width: 600px;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.description .line-1 {
+    max-width: 100%
+}
+
+.description.long .title {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+}
+
+.description.long .title.circle {
+    border: 1px solid #444746;
+    border-radius: 50%
+}
+
+.locations-container {
+    width: 600px;
+    max-width: 100%;
+    margin: auto
+}
+
+.line-1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.panel-title, .panel-title a {
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left
+}
+
+.panel-group .panel {
+    border: none
+}
+
+.panel-body {
+    font-size: 14px;
+}
+
+.panel-body * {
+    text-align: left
+}
+
+.panel-body ul {
+    padding-left: 20px;
+    list-style-type: circle
+}
+
+.panel-body .sublistHead {
+    list-style-type: none;
+    font-weight: bold
+}
+
+#promo {
+    margin-bottom: 200px
+}
+
+.navbar-collapse {
+    text-align: right
+}
+
+button.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff7d7d, #e72038);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.logo {
+    padding-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.logo .heading {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px
+}
+
+.logo .row.images > div {
+    line-height: 50px;
+    padding-bottom: 20px
+}
+
+.row.instant {
+    margin-bottom: 40px
+}
+
+.navbar {
+    margin-bottom: 15px
+}
+
+.emailSignup {
+    text-align: center;
+}
+
+.emailSignup .emailSignupBox {
+    display: inline-block;
+    padding: 25px;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.emailSignup .emailSignupBox .input-group > * {
+    vertical-align: middle
+}
+
+.emailSignup .emailSignupBox .input-group input {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    height: 50px;
+    width: 300px
+}
+
+.emailSignup .emailSignupBox .checkbox {
+    font-size: 12px;
+    color: #aaa
+}
+
+.mobileBreak {
+    display: none
+}
+
+body:after {
+    z-index: -1000;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: url("../images/bgrnd_rays.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom
+}
+
+.disclaimer {
+    margin-top: 20px
+}
+
+.topSpacing {
+    margin-top: 40px;
+    font-weight: 600
+}
+
+.whatsappInput {
+    margin: 0 auto;
+    display: block;
+    line-height: 2;
+    border-style: none;
+    border-radius: 4px;
+    padding-left: 5px
+}
+
+.get-whatsapp {
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #25d366;
+    color: #fff
+}
+
+.whatsappLogo {
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 11px
+}
+
+#whatsapp-failtext {
+    color: #f00
+}
+
+.sectionHeading {
+    margin-bottom: 40px
+}
+
+.premiumBody {
+    background-image: url("../images/bgrnd_rays.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+.premiumBody:after {
+    background: none
+}
+
+.premiumHtml {
+    height: 100%
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    body:after {
+        background-size: 1000px 100%
+    }
+
+    .full-top .title {
+        font-size: 20px
+    }
+
+    .full-top .line-1 {
+        width: 190px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .full-top .line-1.homePage {
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+
+    .full-top .signup-button {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .full-top .signup-button button {
+        display: inline-block;
+        width: 100%;
+        max-width: 330px
+    }
+
+    .link {
+        text-align: center;
+        font-size: 16px
+    }
+
+    #applyLink {
+        text-align: center
+    }
+
+    .mobileBreak {
+        display: block
+    }
+
+    .sectionHeading {
+        font-size: 28px;
+    }
+
+    .sectionHeading .subHeading {
+        font-size: 19px
+    }
+
+    .featureBox .title {
+        font-weight: 500
+    }
+
+    .jobs .job-p {
+        margin: auto;
+        margin-top: 40px;
+        width: 100%
+    }
+
+    .emailSignup .emailSignupBox {
+        display: inline-block;
+        padding: 25px;
+        background-color: #fff;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
+    .emailSignup .emailSignupBox .input-group {
+        width: 100%;
+    }
+
+    .emailSignup .emailSignupBox .input-group input, .emailSignup .emailSignupBox .input-group button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .emailSignup .emailSignupBox .checkbox {
+        font-size: 12px
+    }
+
+    .full-top__team .container, .full-top__jobs .container {
+        height: 300px
+    }
+
+
+    .radio {
+        width:30%;
+    }
+
+
+}

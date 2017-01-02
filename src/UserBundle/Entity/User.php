@@ -36,6 +36,7 @@ class User extends BaseUser  implements ParticipantInterface
 
     /**
      * @ORM\Column(type="integer")
+     *
      */
     private $gender;
 

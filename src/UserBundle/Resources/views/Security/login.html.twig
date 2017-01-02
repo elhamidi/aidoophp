@@ -1,26 +1,66 @@
-{% extends "FOSUserBundle::layout.html.twig" %}
+{% extends "UserBundle::layout.html.twig" %}
 
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
-{% if error %}
-    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
-wfdfgdf
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    <div class="col-xs-12 col-md-6">
+        <div class="full-top full-top__index">
+            <div class="container">
+                <img src="{{ asset ('img/aidooLogo.png') }}">
+                <div style="margin-bottom: 10px;font-family: Roboto, sans-serif ; font-size: 12px;">Nouvel utilisateur?    <a href="{{ url("fos_user_registration_register") }}">Inscrivez-vous</a></div>
+            </div>
+        </div>
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+        {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
 
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" />
+        <div id="login-form-container" class="formContainer">
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-</form>
-    <a href="{{ path('fos_user_resetting_request') }}">Forgot password ?</a>
+                {#<label for="username">{{ 'security.login.username'|trans }}</label>#}
+                <div class="inputContainer">
+                    <label class="inputLabel">
+                        <input type="text" id="username" name="_username" placeholder="UserName" required="required"/>
+                    </label>
+                </div>
+
+                {#<label for="password">{{ 'security.login.password'|trans }}</label>#}
+
+                <div class="inputContainer">
+                    <label class="inputLabel">
+                        <input type="password" id="password" name="_password" placeholder="password" required="required"/>
+                    </label>
+                </div>
+
+                <div class="inputContainer" style="margin-top: 10px; margin-bottom: 10px;">
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on"/>
+                    <label class="inputLabel" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                </div>
+
+
+                <div class="inputContainer">
+                    <button type="submit" id="_submit" name="_submit" class="btn cta">{{ 'security.login.submit'|trans }}</button>
+                </div>
+
+            </form>
+
+            <a href="{{ path('fos_user_resetting_request') }}" style="color:black">Mot de passe oubli&eacute; ?</a>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+    <div class="form-group">
+        <label for="usr">Name:</label>
+        <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd">
+    </div>
 
 {% endblock fos_user_content %}
